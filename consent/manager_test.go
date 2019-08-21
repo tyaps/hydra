@@ -33,12 +33,12 @@ import (
 
 	"github.com/ory/viper"
 
-	. "github.com/ory/hydra/consent"
-	"github.com/ory/hydra/driver"
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/internal"
-	"github.com/ory/hydra/x"
 	"github.com/ory/x/sqlcon/dockertest"
+	. "github.com/tyaps/hydra/consent"
+	"github.com/tyaps/hydra/driver"
+	"github.com/tyaps/hydra/driver/configuration"
+	"github.com/tyaps/hydra/internal"
+	"github.com/tyaps/hydra/x"
 )
 
 var m sync.Mutex

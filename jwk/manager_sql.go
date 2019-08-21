@@ -31,9 +31,9 @@ import (
 	"github.com/sirupsen/logrus"
 	jose "gopkg.in/square/go-jose.v2"
 
-	"github.com/ory/hydra/x"
 	"github.com/ory/x/dbal"
 	"github.com/ory/x/sqlcon"
+	"github.com/tyaps/hydra/x"
 )
 
 type SQLManager struct {

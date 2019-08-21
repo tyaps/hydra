@@ -24,7 +24,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/ory/hydra/x"
+	"github.com/tyaps/hydra/x"
 
 	"github.com/imdario/mergo"
 	"github.com/pkg/errors"

@@ -39,11 +39,11 @@ import (
 
 	"github.com/ory/viper"
 
-	hc "github.com/ory/hydra/client"
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/internal"
-	. "github.com/ory/hydra/oauth2"
-	"github.com/ory/hydra/x"
+	hc "github.com/tyaps/hydra/client"
+	"github.com/tyaps/hydra/driver/configuration"
+	"github.com/tyaps/hydra/internal"
+	. "github.com/tyaps/hydra/oauth2"
+	"github.com/tyaps/hydra/x"
 )
 
 func TestClientCredentials(t *testing.T) {

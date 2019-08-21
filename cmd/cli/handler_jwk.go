@@ -28,9 +28,9 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/ory/hydra/sdk/go/hydra/client/admin"
-	"github.com/ory/hydra/sdk/go/hydra/models"
 	"github.com/ory/x/pointerx"
+	"github.com/tyaps/hydra/sdk/go/hydra/client/admin"
+	"github.com/tyaps/hydra/sdk/go/hydra/models"
 
 	"github.com/mendsley/gojwk"
 	"github.com/pborman/uuid"

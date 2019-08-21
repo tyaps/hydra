@@ -37,9 +37,9 @@ import (
 	"github.com/ory/fosite"
 	"github.com/ory/fosite/handler/openid"
 	"github.com/ory/herodot"
-	"github.com/ory/hydra/client"
-	"github.com/ory/hydra/consent"
 	"github.com/ory/x/sqlcon"
+	"github.com/tyaps/hydra/client"
+	"github.com/tyaps/hydra/consent"
 )
 
 var defaultRequest = fosite.Request{

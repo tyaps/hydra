@@ -30,10 +30,10 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/ory/hydra/driver"
-	"github.com/ory/hydra/x"
 	"github.com/ory/x/flagx"
 	"github.com/ory/x/logrusx"
+	"github.com/tyaps/hydra/driver"
+	"github.com/tyaps/hydra/x"
 
 	"github.com/julienschmidt/httprouter"
 	negronilogrus "github.com/meatballhat/negroni-logrus"
@@ -42,12 +42,12 @@ import (
 	"github.com/urfave/negroni"
 
 	"github.com/ory/graceful"
-	"github.com/ory/hydra/client"
-	"github.com/ory/hydra/consent"
-	"github.com/ory/hydra/jwk"
-	"github.com/ory/hydra/oauth2"
 	"github.com/ory/x/healthx"
 	"github.com/ory/x/metricsx"
+	"github.com/tyaps/hydra/client"
+	"github.com/tyaps/hydra/consent"
+	"github.com/tyaps/hydra/jwk"
+	"github.com/tyaps/hydra/oauth2"
 )
 
 var _ = &consent.Handler{}

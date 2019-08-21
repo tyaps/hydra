@@ -37,11 +37,11 @@ import (
 	"github.com/ory/fosite"
 	"github.com/ory/fosite/handler/openid"
 	"github.com/ory/fosite/token/jwt"
-	"github.com/ory/hydra/client"
-	"github.com/ory/hydra/consent"
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/x"
 	"github.com/ory/x/urlx"
+	"github.com/tyaps/hydra/client"
+	"github.com/tyaps/hydra/consent"
+	"github.com/tyaps/hydra/driver/configuration"
+	"github.com/tyaps/hydra/x"
 )
 
 const (

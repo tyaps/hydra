@@ -28,9 +28,9 @@ import (
 
 	"github.com/ory/viper"
 
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/internal"
-	. "github.com/ory/hydra/jwk"
+	"github.com/tyaps/hydra/driver/configuration"
+	"github.com/tyaps/hydra/internal"
+	. "github.com/tyaps/hydra/jwk"
 
 	"github.com/pborman/uuid"
 	"github.com/stretchr/testify/assert"

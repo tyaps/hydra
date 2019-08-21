@@ -7,7 +7,7 @@ import (
 
 	"github.com/ory/viper"
 
-	"github.com/ory/hydra/driver/configuration"
+	"github.com/tyaps/hydra/driver/configuration"
 )
 
 type DefaultDriver struct {

@@ -8,12 +8,12 @@ import (
 	"github.com/jmoiron/sqlx"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ory/hydra/client"
-	"github.com/ory/hydra/consent"
-	"github.com/ory/hydra/internal"
-	"github.com/ory/hydra/x"
 	"github.com/ory/x/dbal"
 	"github.com/ory/x/dbal/migratest"
+	"github.com/tyaps/hydra/client"
+	"github.com/tyaps/hydra/consent"
+	"github.com/tyaps/hydra/internal"
+	"github.com/tyaps/hydra/x"
 )
 
 func TestXXMigrations(t *testing.T) {

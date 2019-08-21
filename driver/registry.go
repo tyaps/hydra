@@ -6,18 +6,18 @@ import (
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 
-	"github.com/ory/hydra/metrics/prometheus"
 	"github.com/ory/x/cmdx"
 	"github.com/ory/x/tracing"
+	"github.com/tyaps/hydra/metrics/prometheus"
 
-	"github.com/ory/hydra/client"
-	"github.com/ory/hydra/consent"
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/jwk"
-	"github.com/ory/hydra/oauth2"
-	"github.com/ory/hydra/x"
 	"github.com/ory/x/dbal"
 	"github.com/ory/x/healthx"
+	"github.com/tyaps/hydra/client"
+	"github.com/tyaps/hydra/consent"
+	"github.com/tyaps/hydra/driver/configuration"
+	"github.com/tyaps/hydra/jwk"
+	"github.com/tyaps/hydra/oauth2"
+	"github.com/tyaps/hydra/x"
 )
 
 type Registry interface {

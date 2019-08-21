@@ -2,8 +2,8 @@ package client
 
 import (
 	"github.com/ory/fosite"
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/x"
+	"github.com/tyaps/hydra/driver/configuration"
+	"github.com/tyaps/hydra/x"
 )
 
 type InternalRegistry interface {

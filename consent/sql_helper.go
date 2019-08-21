@@ -30,9 +30,9 @@ import (
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 
-	"github.com/ory/hydra/client"
 	"github.com/ory/x/dbal"
 	"github.com/ory/x/stringsx"
+	"github.com/tyaps/hydra/client"
 )
 
 var Migrations = map[string]*dbal.PackrMigrationSource{

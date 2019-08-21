@@ -31,11 +31,11 @@ import (
 
 	"github.com/ory/viper"
 
-	"github.com/ory/hydra/driver"
-	"github.com/ory/hydra/driver/configuration"
 	"github.com/ory/x/cmdx"
 	"github.com/ory/x/flagx"
 	"github.com/ory/x/logrusx"
+	"github.com/tyaps/hydra/driver"
+	"github.com/tyaps/hydra/driver/configuration"
 )
 
 type MigrateHandler struct{}

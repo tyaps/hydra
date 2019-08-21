@@ -25,7 +25,7 @@ import (
 	"time"
 
 	"github.com/ory/fosite"
-	"github.com/ory/hydra/consent"
+	"github.com/tyaps/hydra/consent"
 )
 
 var _ consent.Strategy = new(consentMock)

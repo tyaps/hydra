@@ -25,13 +25,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ory/hydra/client"
+	"github.com/tyaps/hydra/client"
 
 	"github.com/pkg/errors"
 
 	"github.com/ory/fosite"
-	"github.com/ory/hydra/x"
 	"github.com/ory/x/pagination"
+	"github.com/tyaps/hydra/x"
 )
 
 type MemoryManager struct {

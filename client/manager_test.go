@@ -31,9 +31,9 @@ import (
 	_ "github.com/lib/pq"
 	"github.com/stretchr/testify/require"
 
-	. "github.com/ory/hydra/client"
-	"github.com/ory/hydra/internal"
 	"github.com/ory/x/sqlcon/dockertest"
+	. "github.com/tyaps/hydra/client"
+	"github.com/tyaps/hydra/internal"
 )
 
 var clientManagers = map[string]Manager{}

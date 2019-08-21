@@ -28,13 +28,13 @@ import (
 
 	"github.com/ory/viper"
 
-	"github.com/ory/hydra/driver"
+	"github.com/tyaps/hydra/driver"
 
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 
-	"github.com/ory/hydra/jwk"
 	"github.com/ory/x/tlsx"
+	"github.com/tyaps/hydra/jwk"
 )
 
 const (

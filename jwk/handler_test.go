@@ -33,9 +33,9 @@ import (
 
 	"github.com/ory/viper"
 
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/internal"
-	"github.com/ory/hydra/x"
+	"github.com/tyaps/hydra/driver/configuration"
+	"github.com/tyaps/hydra/internal"
+	"github.com/tyaps/hydra/x"
 )
 
 func TestHandlerWellKnown(t *testing.T) {

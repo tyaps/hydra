@@ -29,10 +29,10 @@ import (
 	_ "github.com/lib/pq"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ory/hydra/internal"
-	. "github.com/ory/hydra/jwk"
-	"github.com/ory/hydra/x"
 	"github.com/ory/x/sqlcon/dockertest"
+	"github.com/tyaps/hydra/internal"
+	. "github.com/tyaps/hydra/jwk"
+	"github.com/tyaps/hydra/x"
 )
 
 var managers = map[string]Manager{}

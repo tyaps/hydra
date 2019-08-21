@@ -7,10 +7,10 @@ import (
 
 	"github.com/ory/viper"
 
-	"github.com/ory/hydra/driver"
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/jwk"
 	"github.com/ory/x/logrusx"
+	"github.com/tyaps/hydra/driver"
+	"github.com/tyaps/hydra/driver/configuration"
+	"github.com/tyaps/hydra/jwk"
 )
 
 func resetConfig() {

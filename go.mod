@@ -1,4 +1,4 @@
-module github.com/ory/hydra
+module github.com/tyaps/hydra
 
 require (
 	github.com/Microsoft/go-winio v0.4.12 // indirect

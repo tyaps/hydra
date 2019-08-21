@@ -5,13 +5,13 @@ package driver
 import (
 	"github.com/jmoiron/sqlx"
 
-	"github.com/ory/hydra/client"
-	"github.com/ory/hydra/consent"
-	"github.com/ory/hydra/jwk"
-	"github.com/ory/hydra/x"
 	"github.com/ory/x/dbal"
 	"github.com/ory/x/sqlcon"
 	"github.com/ory/x/urlx"
+	"github.com/tyaps/hydra/client"
+	"github.com/tyaps/hydra/consent"
+	"github.com/tyaps/hydra/jwk"
+	"github.com/tyaps/hydra/x"
 )
 
 type RegistryNoPlugin struct {

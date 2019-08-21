@@ -14,8 +14,8 @@ import (
 
 	"github.com/ory/viper"
 
-	"github.com/ory/hydra/x"
 	"github.com/ory/x/logrusx"
+	"github.com/tyaps/hydra/x"
 )
 
 func setEnv(key, value string) func(t *testing.T) {

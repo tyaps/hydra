@@ -2,13 +2,13 @@ package driver
 
 import (
 	"github.com/ory/fosite"
-	"github.com/ory/hydra/oauth2"
-	"github.com/ory/hydra/x"
+	"github.com/tyaps/hydra/oauth2"
+	"github.com/tyaps/hydra/x"
 
-	"github.com/ory/hydra/client"
-	"github.com/ory/hydra/consent"
-	"github.com/ory/hydra/jwk"
 	"github.com/ory/x/dbal"
+	"github.com/tyaps/hydra/client"
+	"github.com/tyaps/hydra/consent"
+	"github.com/tyaps/hydra/jwk"
 )
 
 type RegistryMemory struct {

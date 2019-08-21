@@ -8,9 +8,9 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	"github.com/ory/hydra/metrics/prometheus"
 	"github.com/ory/x/logrusx"
 	"github.com/ory/x/serverx"
+	"github.com/tyaps/hydra/metrics/prometheus"
 
 	"github.com/gorilla/sessions"
 	"github.com/sirupsen/logrus"
@@ -20,16 +20,16 @@ import (
 	foauth2 "github.com/ory/fosite/handler/oauth2"
 	"github.com/ory/fosite/handler/openid"
 	"github.com/ory/herodot"
-	"github.com/ory/hydra/client"
-	"github.com/ory/hydra/consent"
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/jwk"
-	"github.com/ory/hydra/oauth2"
-	"github.com/ory/hydra/x"
 	"github.com/ory/x/healthx"
 	"github.com/ory/x/resilience"
 	"github.com/ory/x/tracing"
 	"github.com/ory/x/urlx"
+	"github.com/tyaps/hydra/client"
+	"github.com/tyaps/hydra/consent"
+	"github.com/tyaps/hydra/driver/configuration"
+	"github.com/tyaps/hydra/jwk"
+	"github.com/tyaps/hydra/oauth2"
+	"github.com/tyaps/hydra/x"
 )
 
 const (

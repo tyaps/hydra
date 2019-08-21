@@ -9,8 +9,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/ory/hydra/driver/configuration"
 	"github.com/ory/x/dbal"
+	"github.com/tyaps/hydra/driver/configuration"
 )
 
 type RegistryPlugin struct {

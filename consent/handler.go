@@ -32,9 +32,9 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/ory/fosite"
-	"github.com/ory/hydra/x"
 	"github.com/ory/x/pagination"
 	"github.com/ory/x/urlx"
+	"github.com/tyaps/hydra/x"
 )
 
 type Handler struct {

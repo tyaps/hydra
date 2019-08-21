@@ -26,8 +26,8 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/ory/hydra/sdk/go/hydra/client/admin"
 	"github.com/ory/x/pointerx"
+	"github.com/tyaps/hydra/sdk/go/hydra/client/admin"
 
 	"github.com/spf13/cobra"
 

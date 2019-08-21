@@ -48,17 +48,17 @@ import (
 
 	"github.com/ory/fosite"
 	"github.com/ory/fosite/token/jwt"
-	"github.com/ory/hydra/client"
-	. "github.com/ory/hydra/consent"
-	"github.com/ory/hydra/driver"
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/internal"
-	hydra "github.com/ory/hydra/sdk/go/hydra/client"
-	"github.com/ory/hydra/sdk/go/hydra/client/admin"
-	"github.com/ory/hydra/sdk/go/hydra/models"
-	"github.com/ory/hydra/x"
 	"github.com/ory/x/pointerx"
 	"github.com/ory/x/urlx"
+	"github.com/tyaps/hydra/client"
+	. "github.com/tyaps/hydra/consent"
+	"github.com/tyaps/hydra/driver"
+	"github.com/tyaps/hydra/driver/configuration"
+	"github.com/tyaps/hydra/internal"
+	hydra "github.com/tyaps/hydra/sdk/go/hydra/client"
+	"github.com/tyaps/hydra/sdk/go/hydra/client/admin"
+	"github.com/tyaps/hydra/sdk/go/hydra/models"
+	"github.com/tyaps/hydra/x"
 )
 
 func mustRSAKey() *rsa.PrivateKey {

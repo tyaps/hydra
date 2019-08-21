@@ -28,12 +28,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/ory/hydra/sdk/go/hydra/client/admin"
-	"github.com/ory/hydra/sdk/go/hydra/models"
-	"github.com/ory/hydra/x"
 	"github.com/ory/x/cmdx"
 	"github.com/ory/x/flagx"
 	"github.com/ory/x/pointerx"
+	"github.com/tyaps/hydra/sdk/go/hydra/client/admin"
+	"github.com/tyaps/hydra/sdk/go/hydra/models"
+	"github.com/tyaps/hydra/x"
 )
 
 type ClientHandler struct{}

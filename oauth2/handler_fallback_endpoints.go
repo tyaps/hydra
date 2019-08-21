@@ -24,7 +24,7 @@ import (
 	"html/template"
 	"net/http"
 
-	"github.com/ory/hydra/driver/configuration"
+	"github.com/tyaps/hydra/driver/configuration"
 
 	"github.com/julienschmidt/httprouter"
 )

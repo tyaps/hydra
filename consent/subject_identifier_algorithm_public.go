@@ -20,7 +20,7 @@
 
 package consent
 
-import "github.com/ory/hydra/client"
+import "github.com/tyaps/hydra/client"
 
 type SubjectIdentifierAlgorithmPublic struct{}
 

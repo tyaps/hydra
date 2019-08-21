@@ -23,8 +23,8 @@
 package main
 
 import (
-	"github.com/ory/hydra/cmd"
 	"github.com/ory/x/profilex"
+	"github.com/tyaps/hydra/cmd"
 )
 
 func main() {

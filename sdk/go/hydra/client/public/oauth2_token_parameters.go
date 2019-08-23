@@ -65,6 +65,8 @@ type Oauth2TokenParams struct {
 	ClientID *string
 	/*Code*/
 	Code *string
+	/*RefreshToken*/
+	RefreshToken *string
 	/*GrantType*/
 	GrantType string
 	/*RedirectURI*/
@@ -130,6 +132,17 @@ func (o *Oauth2TokenParams) SetCode(code *string) {
 	o.Code = code
 }
 
+// WithRefreshToken adds the refreshToken to the oauth2 token params
+func (o *Oauth2TokenParams) WithRefreshToken(refreshToken *string) *Oauth2TokenParams {
+	o.SetRefreshToken(refreshToken)
+	return o
+}
+
+// SetRefreshToken adds the refreshToken to the oauth2 token params
+func (o *Oauth2TokenParams) SetRefreshToken(refreshToken *string) {
+	o.RefreshToken = refreshToken
+}
+
 // WithGrantType adds the grantType to the oauth2 token params
 func (o *Oauth2TokenParams) WithGrantType(grantType string) *Oauth2TokenParams {
 	o.SetGrantType(grantType)
@@ -186,6 +199,22 @@ func (o *Oauth2TokenParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.R
 		fCode := frCode
 		if fCode != "" {
 			if err := r.SetFormParam("code", fCode); err != nil {
+				return err
+			}
+		}
+
+	}
+
+	if o.RefreshToken != nil {
+
+		// form param refreshToken
+		var frRefreshToken string
+		if o.RefreshToken != nil {
+			frRefreshToken = *o.RefreshToken
+		}
+		fRefreshToken := frRefreshToken
+		if fRefreshToken != "" {
+			if err := r.SetFormParam("refresh_token", fRefreshToken); err != nil {
 				return err
 			}
 		}

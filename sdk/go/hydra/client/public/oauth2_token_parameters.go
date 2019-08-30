@@ -71,6 +71,8 @@ type Oauth2TokenParams struct {
 	GrantType string
 	/*RedirectURI*/
 	RedirectURI *string
+	/*Audience*/
+	Audience []string
 
 	timeout    time.Duration
 	Context    context.Context
@@ -141,6 +143,17 @@ func (o *Oauth2TokenParams) WithRefreshToken(refreshToken *string) *Oauth2TokenP
 // SetRefreshToken adds the refreshToken to the oauth2 token params
 func (o *Oauth2TokenParams) SetRefreshToken(refreshToken *string) {
 	o.RefreshToken = refreshToken
+}
+
+// WithRefreshToken adds the refreshToken to the oauth2 token params
+func (o *Oauth2TokenParams) WithAudience(audience []string) *Oauth2TokenParams {
+	o.SetAudience(audience)
+	return o
+}
+
+// SetRefreshToken adds the refreshToken to the oauth2 token params
+func (o *Oauth2TokenParams) SetAudience(audience []string) {
+	o.Audience = audience
 }
 
 // WithGrantType adds the grantType to the oauth2 token params
@@ -215,6 +228,22 @@ func (o *Oauth2TokenParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.R
 		fRefreshToken := frRefreshToken
 		if fRefreshToken != "" {
 			if err := r.SetFormParam("refresh_token", fRefreshToken); err != nil {
+				return err
+			}
+		}
+
+	}
+
+	if o.Audience != nil {
+
+		// form param refreshToken
+		var frAudience []string
+		if o.Audience != nil {
+			frAudience = o.Audience
+		}
+		fAudience := frAudience
+		if fAudience != nil {
+			if err := r.SetFormParam("audience", fAudience...); err != nil {
 				return err
 			}
 		}
